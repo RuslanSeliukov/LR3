@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Super Chart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="js/helper.js"></script>
+</head>
+<body onload="connect();" onunload="disconnect();">
+<h1> Chat Room </h1>
+<textarea id="messages" class="panel message-area" disabled="true"></textarea>
+<div class="panel input-area">
+    <input id="userName" class="text-field" type="text" placeholder="Name"/>
+    <input id="messageInput" class="text-field" type="text" placeholder="Message"
+           onkeydown="var VK_RETURN = 13; if (event.carkeyCode == VK_RETURN ) sendMessage();"/>
+    <input class="button" type="submit" value="Send" onclick="sendMessage();"/>
+</div>
+<div id="counter">
+    <h3>Messages processed: </h3><p id="messagesCounter"></p>
+</div>
+</body>
+
+</html>

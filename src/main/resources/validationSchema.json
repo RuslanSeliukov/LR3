@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Basic message validation schema",
+  "description": "Schema to validate basic message json",
+  "type": "object",
+  "properties": {
+
+    "user": {
+      "description": "The username",
+      "type": "string"
+    },
+    "message": {
+      "description": "The message from user",
+      "type": "string"
+    }
+  },
+  "required": ["user", "message"]
+}
